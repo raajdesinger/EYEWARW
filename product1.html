@@ -1,0 +1,277 @@
+
+<section class="shop-section py-5">
+    <div class="container-fluid px-lg-5">
+
+        <!-- Shop Heading -->
+        <div class="shop-heading mb-4">
+            <h2>Explore Our Collection</h2>
+            <p>Find the perfect eyewear for your style</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- LEFT FILTER SIDEBAR -->
+            <div class="col-lg-3">
+
+                <button class="btn filter-mobile-btn d-lg-none w-100 mb-3"
+                    type="button" data-bs-toggle="collapse"
+                    data-bs-target="#filterSidebar">
+                    <i class="bi bi-sliders"></i> Filters
+                </button>
+
+                <aside class="filter-sidebar collapse d-lg-block"
+                    id="filterSidebar">
+
+                    <div class="filter-header">
+                        <h4>Filters</h4>
+                        <button type="button" id="clearFilters">Clear All</button>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="filter-group">
+                        <h5>Categories</h5>
+                        <label><input type="checkbox" class="filter-option" data-group="category" value="eyeglasses"> Eyeglasses</label>
+                        <label><input type="checkbox" class="filter-option" data-group="category" value="sunglasses"> Sunglasses</label>
+                        <label><input type="checkbox" class="filter-option" data-group="category" value="computer"> Computer Glasses</label>
+                        <label><input type="checkbox" class="filter-option" data-group="category" value="reading"> Reading Glasses</label>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="filter-group">
+                        <h5>Price Range</h5>
+                        <div class="price-values">
+                            <span>₹500</span>
+                            <strong id="priceValue">₹10,000</strong>
+                        </div>
+                        <input type="range" class="form-range" id="priceRange"
+                            min="500" max="10000" step="100" value="10000">
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="filter-group">
+                        <h5>Gender</h5>
+                        <label><input type="checkbox" class="filter-option" data-group="gender" value="men"> Men</label>
+                        <label><input type="checkbox" class="filter-option" data-group="gender" value="women"> Women</label>
+                        <label><input type="checkbox" class="filter-option" data-group="gender" value="unisex"> Unisex</label>
+                        <label><input type="checkbox" class="filter-option" data-group="gender" value="kids"> Kids</label>
+                    </div>
+
+                    <!-- Frame Shape -->
+                    <div class="filter-group">
+                        <h5>Frame Shape</h5>
+                        <label><input type="checkbox" class="filter-option" data-group="shape" value="rectangle"> Rectangle</label>
+                        <label><input type="checkbox" class="filter-option" data-group="shape" value="round"> Round</label>
+                        <label><input type="checkbox" class="filter-option" data-group="shape" value="square"> Square</label>
+                        <label><input type="checkbox" class="filter-option" data-group="shape" value="aviator"> Aviator</label>
+                        <label><input type="checkbox" class="filter-option" data-group="shape" value="cat-eye"> Cat Eye</label>
+                    </div>
+
+                    <!-- Frame Material -->
+                    <div class="filter-group">
+                        <h5>Frame Material</h5>
+                        <label><input type="checkbox" class="filter-option" data-group="material" value="metal"> Metal</label>
+                        <label><input type="checkbox" class="filter-option" data-group="material" value="plastic"> Plastic</label>
+                        <label><input type="checkbox" class="filter-option" data-group="material" value="tr90"> TR90</label>
+                        <label><input type="checkbox" class="filter-option" data-group="material" value="titanium"> Titanium</label>
+                    </div>
+
+                    <!-- Frame Colour -->
+                    <div class="filter-group">
+                        <h5>Frame Colour</h5>
+                        <label><input type="checkbox" class="filter-option" data-group="color" value="black"> Black</label>
+                        <label><input type="checkbox" class="filter-option" data-group="color" value="gold"> Gold</label>
+                        <label><input type="checkbox" class="filter-option" data-group="color" value="silver"> Silver</label>
+                        <label><input type="checkbox" class="filter-option" data-group="color" value="brown"> Brown</label>
+                    </div>
+
+                    <!-- Lens Type -->
+                    <div class="filter-group">
+                        <h5>Lens Type</h5>
+                        <label><input type="checkbox" class="filter-option" data-group="lens" value="blue-cut"> Blue Cut</label>
+                        <label><input type="checkbox" class="filter-option" data-group="lens" value="single-vision"> Single Vision</label>
+                        <label><input type="checkbox" class="filter-option" data-group="lens" value="progressive"> Progressive</label>
+                        <label><input type="checkbox" class="filter-option" data-group="lens" value="photochromic"> Photochromic</label>
+                    </div>
+
+                    <!-- Brand -->
+                    <div class="filter-group">
+                        <h5>Brands</h5>
+                        <label><input type="checkbox" class="filter-option" data-group="brand" value="ray-ban"> Ray-Ban</label>
+                        <label><input type="checkbox" class="filter-option" data-group="brand" value="fastrack"> Fastrack</label>
+                        <label><input type="checkbox" class="filter-option" data-group="brand" value="vincent-chase"> Vincent Chase</label>
+                        <label><input type="checkbox" class="filter-option" data-group="brand" value="lenskart"> Lenskart</label>
+                    </div>
+
+                    <!-- Rating -->
+                    <div class="filter-group">
+                        <h5>Customer Rating</h5>
+                        <label><input type="checkbox" class="filter-option" data-group="rating" value="4"> ★★★★ & Above</label>
+                        <label><input type="checkbox" class="filter-option" data-group="rating" value="3"> ★★★ & Above</label>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="filter-group">
+                        <h5>Availability</h5>
+                        <label><input type="checkbox" class="filter-option" data-group="stock" value="in-stock"> In Stock</label>
+                        <label><input type="checkbox" class="filter-option" data-group="stock" value="out-of-stock"> Out of Stock</label>
+                    </div>
+
+                    <!-- Discount -->
+                    <div class="filter-group">
+                        <h5>Discount</h5>
+                        <label><input type="checkbox" class="filter-option" data-group="discount" value="10"> 10% & Above</label>
+                        <label><input type="checkbox" class="filter-option" data-group="discount" value="20"> 20% & Above</label>
+                        <label><input type="checkbox" class="filter-option" data-group="discount" value="30"> 30% & Above</label>
+                        <label><input type="checkbox" class="filter-option" data-group="discount" value="50"> 50% & Above</label>
+                    </div>
+
+                </aside>
+            </div>
+
+            <!-- RIGHT PRODUCT SECTION -->
+            <div class="col-lg-9">
+
+                <div class="product-toolbar mb-4">
+                    <p class="mb-0">Showing <strong id="productCount">3</strong> Products</p>
+
+                    <select class="form-select sort-select" id="sortProducts">
+                        <option value="default">Sort By: Featured</option>
+                        <option value="low">Price: Low to High</option>
+                        <option value="high">Price: High to Low</option>
+                        <option value="rating">Top Rated</option>
+                        <option value="discount">Best Discount</option>
+                    </select>
+                </div>
+
+                <div class="row g-4" id="productList">
+
+                    <!-- PRODUCT 1 -->
+                    <div class="col-xl-4 col-md-6 product-item"
+                        data-category="eyeglasses"
+                        data-price="4999"
+                        data-gender="men"
+                        data-shape="rectangle"
+                        data-material="metal"
+                        data-color="black"
+                        data-lens="blue-cut"
+                        data-brand="ray-ban"
+                        data-rating="4.8"
+                        data-stock="in-stock"
+                        data-discount="38">
+
+                        <div class="product-card">
+                            <span class="product-badge">♛ Best Seller</span>
+                            <button class="wishlist-btn">♡</button>
+
+                            <div class="product-image">
+                                <img src="images/pro3.png" alt="Eyeglasses">
+                            </div>
+
+                            <div class="product-content">
+                                <h3>Stylish Eyeglasses</h3>
+                                <div class="product-rating">
+                                    ★★★★★ <span>4.8 (124)</span>
+                                </div>
+                                <div class="product-price">
+                                    ₹ 4,999 <del>₹ 7,999</del>
+                                    <span class="discount">38% OFF</span>
+                                </div>
+
+                                <div class="product-buttons">
+                                    <a href="cart.html" class="btn btn-primary Cart">🛒 Add to Cart</a>
+                                    <a href="checkout.html" class="btn btn-primary Buy">♙ Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 2 -->
+                    <div class="col-xl-4 col-md-6 product-item"
+                        data-category="sunglasses"
+                        data-price="2999"
+                        data-gender="women"
+                        data-shape="cat-eye"
+                        data-material="plastic"
+                        data-color="brown"
+                        data-lens="photochromic"
+                        data-brand="fastrack"
+                        data-rating="4.5"
+                        data-stock="in-stock"
+                        data-discount="25">
+
+                        <div class="product-card">
+                            <span class="product-badge">New Arrival</span>
+                            <button class="wishlist-btn">♡</button>
+
+                            <div class="product-image">
+                                <img src="images/pro2.png" alt="Sunglasses">
+                            </div>
+
+                            <div class="product-content">
+                                <h3>Premium Sunglasses</h3>
+                                <div class="product-rating">
+                                    ★★★★★ <span>4.5 (85)</span>
+                                </div>
+                                <div class="product-price">
+                                    ₹ 2,999 <del>₹ 3,999</del>
+                                    <span class="discount">25% OFF</span>
+                                </div>
+
+                                <div class="product-buttons">
+                                    <a href="cart.html" class="btn btn-primary Cart">🛒 Add to Cart</a>
+                                    <a href="checkout.html" class="btn btn-primary Buy">♙ Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCT 3 -->
+                    <div class="col-xl-4 col-md-6 product-item"
+                        data-category="computer"
+                        data-price="1499"
+                        data-gender="unisex"
+                        data-shape="round"
+                        data-material="tr90"
+                        data-color="gold"
+                        data-lens="blue-cut"
+                        data-brand="vincent-chase"
+                        data-rating="4.2"
+                        data-stock="in-stock"
+                        data-discount="15">
+
+                        <div class="product-card">
+                            <span class="product-badge">Popular</span>
+                            <button class="wishlist-btn">♡</button>
+
+                            <div class="product-image">
+                                <img src="images/pro3.png" alt="Computer Glasses">
+                            </div>
+
+                            <div class="product-content">
+                                <h3>Computer Protection Glasses</h3>
+                                <div class="product-rating">
+                                    ★★★★☆ <span>4.2 (56)</span>
+                                </div>
+                                <div class="product-price">
+                                    ₹ 1,499 <del>₹ 1,799</del>
+                                    <span class="discount">15% OFF</span>
+                                </div>
+
+                                <div class="product-buttons">
+                                    <a href="cart.html" class="btn btn-primary Cart">🛒 Add to Cart</a>
+                                    <a href="checkout.html" class="btn btn-primary Buy">♙ Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p id="noProducts" class="text-center py-5" style="display:none;">
+                    No products found. Please change your filters.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
